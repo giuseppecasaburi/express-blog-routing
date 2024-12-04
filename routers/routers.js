@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 
 // Show
 router.get("/:id", (req, res) => {
-    res.json("Qui leggiamo un solo elemento dell'array");
+    res.json("Qui leggiamo un solo elemento dell'array con numero " + req.params.id);
 });
 
 // Create
@@ -19,10 +19,12 @@ router.post("/", (req, res) => {
 
 // Update
 router.put("/:id", (req, res) => {
-    res.json("Qui modifichiamo un elemento sovrascrivendolo");
+    res.json("Qui modifichiamo un elemento sovrascrivendolo, con id pari a " + req.params.id);
 });
 
 // Delete
 router.delete("/:id", (req, res) => {
-    res.json("Qui cancelliamo un intero elemento");
+    res.json("Qui cancelliamo un intero elemento, con id pari a " + req.params.id);
 });
+
+module.exports = router;
