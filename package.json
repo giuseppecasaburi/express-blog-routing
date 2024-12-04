@@ -1,0 +1,16 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "Usando l'array dei post di ieri le relative immagini, creare un file di routing (`routers/posts.js`) che conterrà le rotte necessarie per l'entità `post`.\r All'interno creare le rotte per le operazioni CRUD (*Index, Show, Create, Update e Delete)*\r Tutte le risposte saranno dei testi che confermeranno l’operazione che il server deve eseguire, secondo le convenzioni REST.\r *Ad esempio:*\r Se viene chiamata `/posts` col verbo `GET` ci aspettiamo “Lista dei post”;\r Se viene chiamato `/posts/1` col verbo `DELETE` ci aspettiamo “Cancellazione del post 1”\r e via dicendo…\r Registrare il router dentro `app.js` con il prefisso `posts/`.\r :stelle: Bonus\r - Provare a restituire la lista dei post dalla rotta *index*, in formato `json`\r - Provare a restituire un singolo post dalla rotta *show,* sempre in formato `json`",
+  "main": "blog.js",
+  "scripts": {
+    "start": "node blog.js",
+    "dev": "node --watch blog.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
